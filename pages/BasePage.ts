@@ -1,7 +1,7 @@
 import { Page, Locator, expect } from '@playwright/test';
 
 export class BasePage {
-   constructor(private page: Page) {}
+   constructor(readonly page: Page) {}
   
 
   async navigate(path: string) {
