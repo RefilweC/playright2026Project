@@ -5,6 +5,7 @@ export class BasePage {
   
 
   async navigate(path: string) {
+    await this.page.setViewportSize({ width: 1536, height: 864 });
     await this.page.goto(path);
   }
 
